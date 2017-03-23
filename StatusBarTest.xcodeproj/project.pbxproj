@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06931C4616B66EA13DAF1F9C /* libPods-StatusBarTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B0AEF337367A14849F2617 /* libPods-StatusBarTest.a */; };
 		75AEADC71E83CD74006FFA18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AEADC61E83CD74006FFA18 /* main.m */; };
 		75AEADCA1E83CD74006FFA18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AEADC91E83CD74006FFA18 /* AppDelegate.m */; };
 		75AEADCD1E83CD74006FFA18 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AEADCC1E83CD74006FFA18 /* ViewController.m */; };
 		75AEADD01E83CD74006FFA18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75AEADCE1E83CD74006FFA18 /* Main.storyboard */; };
 		75AEADD21E83CD74006FFA18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75AEADD11E83CD74006FFA18 /* Assets.xcassets */; };
 		75AEADD51E83CD74006FFA18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75AEADD31E83CD74006FFA18 /* LaunchScreen.storyboard */; };
+		ABC356376BB53DF5BA5872B5 /* ASDKChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC3536A349013ED54AC4FA3 /* ASDKChildViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C4124656DC17F5C7324C48B /* Pods-StatusBarTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StatusBarTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-StatusBarTest/Pods-StatusBarTest.release.xcconfig"; sourceTree = "<group>"; };
 		75AEADC21E83CD74006FFA18 /* StatusBarTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatusBarTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75AEADC61E83CD74006FFA18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		75AEADC81E83CD74006FFA18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +29,10 @@
 		75AEADD11E83CD74006FFA18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75AEADD41E83CD74006FFA18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75AEADD61E83CD74006FFA18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78B0AEF337367A14849F2617 /* libPods-StatusBarTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StatusBarTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8052C1FD790A104DE3713AD0 /* Pods-StatusBarTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StatusBarTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StatusBarTest/Pods-StatusBarTest.debug.xcconfig"; sourceTree = "<group>"; };
+		ABC3520C19B6F8C8D1BE3E04 /* ASDKChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDKChildViewController.h; sourceTree = "<group>"; };
+		ABC3536A349013ED54AC4FA3 /* ASDKChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDKChildViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +40,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06931C4616B66EA13DAF1F9C /* libPods-StatusBarTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A13CF2DDEDA1EB8E9CCDFFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8052C1FD790A104DE3713AD0 /* Pods-StatusBarTest.debug.xcconfig */,
+				2C4124656DC17F5C7324C48B /* Pods-StatusBarTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		75AEADB91E83CD74006FFA18 = {
 			isa = PBXGroup;
 			children = (
 				75AEADC41E83CD74006FFA18 /* StatusBarTest */,
 				75AEADC31E83CD74006FFA18 /* Products */,
+				1A13CF2DDEDA1EB8E9CCDFFC /* Pods */,
+				7A864A606656764121BC4842 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +86,8 @@
 				75AEADD31E83CD74006FFA18 /* LaunchScreen.storyboard */,
 				75AEADD61E83CD74006FFA18 /* Info.plist */,
 				75AEADC51E83CD74006FFA18 /* Supporting Files */,
+				ABC3536A349013ED54AC4FA3 /* ASDKChildViewController.m */,
+				ABC3520C19B6F8C8D1BE3E04 /* ASDKChildViewController.h */,
 			);
 			path = StatusBarTest;
 			sourceTree = "<group>";
@@ -79,6 +100,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7A864A606656764121BC4842 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78B0AEF337367A14849F2617 /* libPods-StatusBarTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75AEADD91E83CD74006FFA18 /* Build configuration list for PBXNativeTarget "StatusBarTest" */;
 			buildPhases = (
+				0DE534F7260BDAA6D36D8BE5 /* [CP] Check Pods Manifest.lock */,
 				75AEADBE1E83CD74006FFA18 /* Sources */,
 				75AEADBF1E83CD74006FFA18 /* Frameworks */,
 				75AEADC01E83CD74006FFA18 /* Resources */,
+				E6AC8BF1D17C0D57084042A8 /* [CP] Embed Pods Frameworks */,
+				5BD1709114DD1E7D6C750791 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,6 +177,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0DE534F7260BDAA6D36D8BE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5BD1709114DD1E7D6C750791 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StatusBarTest/Pods-StatusBarTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6AC8BF1D17C0D57084042A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StatusBarTest/Pods-StatusBarTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		75AEADBE1E83CD74006FFA18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -153,6 +233,7 @@
 				75AEADCD1E83CD74006FFA18 /* ViewController.m in Sources */,
 				75AEADCA1E83CD74006FFA18 /* AppDelegate.m in Sources */,
 				75AEADC71E83CD74006FFA18 /* main.m in Sources */,
+				ABC356376BB53DF5BA5872B5 /* ASDKChildViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +349,7 @@
 		};
 		75AEADDA1E83CD74006FFA18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8052C1FD790A104DE3713AD0 /* Pods-StatusBarTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StatusBarTest/Info.plist;
@@ -279,6 +361,7 @@
 		};
 		75AEADDB1E83CD74006FFA18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C4124656DC17F5C7324C48B /* Pods-StatusBarTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StatusBarTest/Info.plist;
